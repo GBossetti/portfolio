@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GB-Developer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../styles/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+</head>
+
+<body>
+<header>
+	<div class="container">
+		<div class="row top">
+			<div class="col"></div>
+			<div class="col-6"></div>
+			<div class="col">
+				<ul class='botonera'>
+					<li><a class="navbtn" href="#presentacion" data-ancla="nosotros">About me</a></li>
+					<li><a class="navbtn" href="#redes" data-ancla="redes">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="principal principal-img vertical-centered-text" id="home">
+	<div class="col-md-5 cta fondo-presen"><h1>GONZALO BOSSETTI</h1> 
+			<h4 style="border-bottom-width: 10px;margin-bottom: 20px;">BACKEND DEVELOPER</h4>
+			<!-- <a  href="https://drive.google.com/file/d/1vMh9fJWsAGw48X_bNC_B79_EG6_wvvnI/view?usp=sharing" class="btn btn-primary repositorio">CURRICULUM VITAE</a> -->
+	</div>
+</div>
+
+<div class="jumbotron presentacion" id="presentacion">
+	<h1 class="display-4">Hello, welcome to my web </h1>
+	<p class="lead">My name is Gonzalo I am, a programming student and technology enthusiast. Actually, I am studying at the UTN, and also, I’m learning about AI and Data Government at UBA-IALAB.
+		I’m currently working on a personal project, where I look forward to improving data management in local governments. I also love to investigate and write about incoming technologies and society. Feel free to contact me, I would be glad.
+		</p>
+	<hr class="my-4">
+	<p>Also, you can take a look at my CV if you want!</p>
+	<a href="https://drive.google.com/file/d/1dhDnpMZn0iEp8aZ380DidfNoR1BS8wPl/view?usp=sharing" class="btn btn-info btn-lg active" role="button" aria-pressed="true">CURRICULUM VITAE</a>
+  </div>
+
+
+
+<section class="banner">
+</section>
+
+<div class="container tecnologias" id="tecnologias">
+	<div class="row">
+		<div class="col-md-12" style="margin-top: 40px;">
+			<h1>Programming knowledge</h1>
+		</div>
+	</div>
+	<div class="row images">
+		<div class="col-md-3">
+			<img src="images/c++.png" alt="">
+			<h3>C++</h3>
+		</div>
+		<div class="col-md-3">
+			<img src="images/python.png" alt="">
+			<h3>PYTHON</h3>
+		</div>
+		<div class="col-md-3">
+			<img src="images/database.png" alt="">
+			<h3>SQL</h3>
+		</div>
+		<div class="col-md-3">
+			<img src="images/c-sharp.png" alt="">
+			<h3>LINUX</h3>
+		</div>
+	</div>
+	
+</div>
+
+
+<footer>
+	<div class="container" id="redes">
+		<div class="row">
+			<div class="col-md-12"></div>
+		</div>
+		<div class="row social">
+		<div class="col-3"></div>	
+					<div class="col-2">
+						<a href="mailto:gonzalo.bossetti@gmail.com"><img src="images/email.png" alt=""></a></div>
+					<div class="col-2">
+						<a href="https://www.linkedin.com/in/gonzalo-bossetti"  target="_blank"><img src="images/linkedin1.png" alt=""></a></div>
+					<div class="col-2">
+						<a target="_blank" href="https://github.com/GBossetti" ><img src="images/github.png" alt=""></a></div>	
+	</div>
+</footer>
+<script src="scripts/js.js"></script>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script>
+	// A $( document ).ready() block.
+$(document).ready(function() {    
+$('.top a').click(function(e){
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset().top;
+        $('html, body').animate({scrollTop:offset}, 600);
+        return false;
+    });
+
+});
+	
+</script>
+</body>
+</html>
